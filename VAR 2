@@ -1,0 +1,35 @@
+#include <Windows.h>
+#include < stdio.h>
+// 변수의 특징
+//1. !!! 변수는 한가지 값만 저장 가능하다.!!!
+// 새로운 값이 저장되면 기존의 값은 사라진다.
+
+void main(){
+	int a;
+	a = 10;
+	a = 0;
+	a = -6;
+	a = 70;
+	a = 1 ;
+	printf("%d", a); printf("\n");
+
+	printf("전"); printf("\n");
+	int num1 = 30;
+	int num2 = 50;
+	printf("num1:%d", num1); printf("\n");
+	printf("num2:%d", num2); printf("\n");
+
+	// num1과 num2 의 값을 서로 교환해 보세요. (힌트) 빈 변수를 하나 활용하자~
+
+	int temp;
+	temp = num1;
+	num1 = num2;
+	num2 = temp;
+
+	printf("후"); printf("\n");
+	printf("num1:%d", num1); printf("\n");
+	printf("num2: %d", num2); printf("\n");
+
+	system("pause");
+
+}
